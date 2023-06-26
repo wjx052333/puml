@@ -1,0 +1,20 @@
+@startuml
+
+state STATE_MPILOT
+state STATE_ACCACTIVE
+state STATE_MPILOTPREACTIVE
+
+STATE_ACCACTIVE --> STATE_MPILOTPREACTIVE : EVT_MPilotActiveRequest
+note on link 
+prio=>10
+cond=>CM(IsRetainAccSatisfied)() && CM(IsEnterCpSatisfied)()
+action=>StateMPilot::ActionACCToCP
+end note
+
+STATE_ACCACTIVE --> STATE_MPILOTPREACTIVE : EVT_MPilotActiveRequest
+note on link 
+prio=>15
+cond=>CM(IsEnterHnpSatisfied)() && CM(IsPlanningSwitchReady)()
+action=>StateMPilot::ActionACCToHNP
+end note
+@enduml

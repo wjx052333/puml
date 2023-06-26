@@ -1,0 +1,52 @@
+actor_cond_add(
+	100, CON_CruiseStationary, SMCOND_TRUE,
+	SM_BUILD_ACTION(&StateCruisingParkingNearby::ActCruiseStationary,
+					this));
+void StateCruisingParkingNearby::ActCruiseStationary(SMEvtCstPtrT event,
+                                                     SMStateCstPtrT src,
+                                                     SMStateCstPtrT tgt) {
+    if (CM(IsLPNPEnterCruisingWithBrake)()) {
+        cruising_stationary_start_time_ = MREG_VAL_GET(current_timestamp_ns);
+    } else {
+        const auto kCruisingStationaryOverTime =
+            MREG_VAL_GET(mff_config).parking.max_lpnp_cruising_stationary_time;
+        if (CM(IsVehicleStationary)()) {
+            if ((MREG_VAL_GET(current_timestamp_ns) >
+                cruising_stationary_start_time_ +
+                    static_cast<uint64_t>(kCruisingStationaryOverTime *
+                                        SEC_TO_NS)) &&
+                !cruising_paused_and_wait_user_choose_parking_) {
+                MFF_LOG_INFO("%s: ParkingNearby=> cruise stationary time out",
+                            __FUNCTION__);
+                TriggerEvent(EVT_CruiseStationaryTimeOut);
+            }
+        } else {
+            cruising_stationary_start_time_ = MREG_VAL_GET(current_timestamp_ns);
+        }
+    }
+}
+
+---------------------------------
+void StateCruisingIn::Init() {
+    actor_cond_add(100, CON_CruiseStationary, BUILD_CONDITION(!CM(IsLPNPEnterCruisingWithBrake)()),
+                   SM_BUILD_ACTION(&StateCruisingIn::ActCruiseStationary, this));
+    actor_cond_add(
+        100, CON_UpdateCruisingStationaryStartTime,
+        BUILD_CONDITION(CM(IsLPNPEnterCruisingWithBrake)()),
+        BUILD_ACTION(cruising_stationary_start_time_ = MREG_VAL_GET(current_timestamp_ns)));
+}
+void StateCruisingIn::ActCruiseStationary(SMEvtCstPtrT event, SMStateCstPtrT src,
+                                          SMStateCstPtrT tgt) {
+    const auto& config = MREG_VAL_GET(mff_config);
+    const auto kCruisingStationaryOverTime = config.parking.max_lpnp_cruising_stationary_time;
+    if (CM(IsVehicleStationary)()) {
+        if ((MREG_VAL_GET(current_timestamp_ns) >
+             cruising_stationary_start_time_ +
+                 static_cast<uint64_t>(kCruisingStationaryOverTime * SEC_TO_NS))) {
+            MFF_LOG_INFO("%s: cruise stationary time out", __FUNCTION__);
+            TriggerEvent(EVT_CruiseStationaryTimeOut);
+        }
+    } else {
+        cruising_stationary_start_time_ = MREG_VAL_GET(current_timestamp_ns);
+    }
+}

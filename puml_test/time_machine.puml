@@ -1,0 +1,45 @@
+@startuml
+clock   "RunOnce"   as C0 with period 50
+clock   "SubSig"   as C1 with period 50 offset 10
+binary  "EVT_RequestCruising"  as EVT_RequestCruising
+concise "lpnp_mode"  as lpnp_mode
+binary "state_cruising_preactive_activate"  as state_cruising_preactive_activate
+binary "state_cruising_preactive_activation_OK_" as state_cruising_preactive_activation_OK_
+binary "IsDriverBraking" as IsDriverBraking
+binary "is_lpnp_enter_cruising_with_brake" as is_lpnp_enter_cruising_with_brake
+
+@0
+EVT_RequestCruising is low
+lpnp_mode is NONE
+state_cruising_preactive_activate is low
+state_cruising_preactive_activation_OK_ is low
+IsDriverBraking is low
+is_lpnp_enter_cruising_with_brake is low
+
+@110
+EVT_RequestCruising is high
+lpnp_mode is LPNP_IN
+state_cruising_preactive_activate is high
+
+@135
+state_cruising_preactive_activate is low
+
+@160
+EVT_RequestCruising is low
+highlight 110 to 160 #Gold;line:DimGrey :收到HMI信号，调用TriggerEvent，同时emit信号activate
+
+@200
+state_cruising_preactive_activation_OK_ is high
+
+@260
+IsDriverBraking is high
+@360
+IsDriverBraking is low
+highlight 260 to 310 #Gold;line:DimGrey :订阅MAF_VehicleServiceInfo，收到IsDriverBraking
+
+
+@300
+is_lpnp_enter_cruising_with_brake is high
+
+
+@enduml

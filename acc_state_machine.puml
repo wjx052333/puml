@@ -1,0 +1,46 @@
+@startuml
+hide empty description
+
+title ACC State Machine
+
+'[*] --> Normal
+Normal --> Failure
+Failure --> Normal
+
+state Normal {
+    [*] --> Passive
+    Ready --> Passive : T2
+
+    state Ready {
+        [*] --> Standby
+        Passive --> Standby : T1
+        Active --> Standby : T4
+        LongitudinalOverride --> Standby : T7
+        Active --> LongitudinalOverride : T8
+        BrakeOnly --> Passive : T12
+
+        state Active {
+            [*] --> ActiveControl
+            ActiveControl --> StandWait : T9
+            StandWait --> ActiveControl : T10
+            ActiveControl --> BrakeOnly : T11
+
+            Standby --> StandWait : T5
+            Standby --> ActiveControl : T3
+
+            LongitudinalOverride --> ActiveControl : T6
+
+            state ActiveControl {
+                [*] --> NormalActive
+                NormalActive --> Suppress : Ta
+                Suppress --> NormalActive : Tb
+                Suppress --> StandstillActive: Td
+                NormalActive --> StandstillActive: Td
+                StandstillActive --> NormalActive : Tc
+                StandstillActive --> Suppress : Tc
+            }
+        }
+    }
+}
+
+@enduml

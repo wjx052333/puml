@@ -1,0 +1,80 @@
+@startuml
+hide empty description
+
+object is_lpnp_enter_cruising_with_brake
+
+object IsDriverBraking
+map StateCruising {
+  ActCruisingPreActiveToCruisingIn =>
+}
+
+diamond diamond_ActCruisingPreActiveToCruisingIn
+IsDriverBraking --> diamond_ActCruisingPreActiveToCruisingIn 
+StateCruising::ActCruisingPreActiveToCruisingIn --> diamond_ActCruisingPreActiveToCruisingIn
+diamond_ActCruisingPreActiveToCruisingIn --o is_lpnp_enter_cruising_with_brake  : true
+
+object IsLpnpModeLpnpIn
+object IsLpnpModePnpIn
+map StateCruisingPreActive {
+  ActivationSuccedded =>
+}
+IsLpnpModeLpnpIn --o StateCruising::ActCruisingPreActiveToCruisingIn
+IsLpnpModePnpIn --o StateCruising::ActCruisingPreActiveToCruisingIn
+StateCruisingPreActive::ActivationSuccedded --o StateCruising::ActCruisingPreActiveToCruisingIn
+
+map parking_report {
+  lpnp_mode => 
+}
+parking_report::lpnp_mode --o IsLpnpModeLpnpIn
+parking_report::lpnp_mode --o IsLpnpModePnpIn
+
+map StateLPNPStandby {
+  on_enter =>
+}
+
+map StateCruisingActive {
+  CON_CheckReleaseBrake =>
+}
+StateCruisingActive::CON_CheckReleaseBrake --o is_lpnp_enter_cruising_with_brake : false
+StateLPNPStandby::on_enter --o is_lpnp_enter_cruising_with_brake : false
+
+map vehicleservice_info {
+  brake =>
+  MAF_VehicleServiceInfo => sub
+}
+map MAF_VehicleServiceInfo {
+  CORE_DECLARE_SUB => 
+  REG_SM_SUB => 
+  CORE_REG_SUB =>
+}
+
+MAF_VehicleServiceInfo::REG_SM_SUB --o vehicleservice_info::brake
+vehicleservice_info::brake --o IsDriverBraking
+
+object IsLPNPEnterCruisingWithBrake
+is_lpnp_enter_cruising_with_brake --o IsLPNPEnterCruisingWithBrake
+
+map OvrdStateRegionLPNP {
+  CondBrakeCruisingActiveToLPNPStandby =>
+}
+map StateRegionLPNP {
+  ActLPNPStandbyToCruisingPreActive =>
+}
+IsLPNPEnterCruisingWithBrake --o OvrdStateRegionLPNP::CondBrakeCruisingActiveToLPNPStandby
+StateRegionLPNP::ActLPNPStandbyToCruisingPreActive --o parking_report::lpnp_mode
+
+map StateCruisingIn {
+  ActCruiseStationary =>
+  cruising_stationary_start_time_ =>
+}
+IsLPNPEnterCruisingWithBrake --o StateCruisingIn::ActCruiseStationary
+IsLPNPEnterCruisingWithBrake --o StateCruisingIn::cruising_stationary_start_time_
+
+map StateCruisingParkingNearby {
+  StateCruisingParkingNearby =>
+  cruising_stationary_start_time_ =>
+}
+IsLPNPEnterCruisingWithBrake --o StateCruisingParkingNearby::StateCruisingParkingNearby
+IsLPNPEnterCruisingWithBrake --o StateCruisingParkingNearby::cruising_stationary_start_time_
+
+@enduml

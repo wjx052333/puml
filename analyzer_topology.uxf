@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text/>
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>56</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>msd_function_module_status
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>80</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>msd_planning_plan
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>104</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>msd_endpoint_control_command
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>128</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>mla_egopose
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>152</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>hdmap_horizon
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>176</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>vehicle_chassis_report
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>200</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>vehicle_body_report
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>224</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>vehicle_wheel_report
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>248</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>perception_vision_fusion_traffic_light
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>272</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>perception_fusion_object
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>296</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>perception_vision_object
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>320</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>perception_radar_result_front
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>344</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>perception_lidar_object
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>368</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>perception_lidar_object_detection
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>392</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>perception_lidar_road_edge
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>416</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>control_function
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>440</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>prediction
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>464</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>planning
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>488</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>np_planning
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>512</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>controller
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>536</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>visionperception
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>560</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>localization
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>584</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>sensor
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>608</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>camera
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>632</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>vehicle
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>656</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lidar_failsafe
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>680</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>fleet
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>1024</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>ipc
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>1000</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>clockdiff
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>704</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>shm_client_suber
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>928</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>internal_monitor_tower_system_status_report_diagnose
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>904</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>internal_monitor_tower_safety_report_diagnose
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>880</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>internal_node_status_diagnose
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>856</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>internal_frame_rate_diagnose
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>832</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>internal_heart_beat_diagnose
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>952</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>internal_shm_client_faults
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>432</x>
+      <y>976</y>
+      <w>296</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>internal_error_status_codes
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>424</x>
+      <y>32</y>
+      <w>208</w>
+      <h>728</h>
+    </coordinates>
+    <panel_attributes>Topic Registries
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>424</x>
+      <y>816</y>
+      <w>312</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Internal registries
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1080</x>
+      <y>992</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>clockdiff_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>992</y>
+      <w>376</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+W
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;450.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1080</x>
+      <y>968</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>md_to_shm_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>968</y>
+      <w>376</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>450.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>16</y>
+      <w>240</w>
+      <h>1088</h>
+    </coordinates>
+    <panel_attributes>Analyzers
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1080</x>
+      <y>600</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>heart_beat_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1088</x>
+      <y>160</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>frame_rate_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>64</y>
+      <w>488</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>80</y>
+      <w>488</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>104</y>
+      <w>488</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>128</y>
+      <w>488</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>152</y>
+      <w>488</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>168</y>
+      <w>488</w>
+      <h>248</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R *_recent_time_stamp
+layer=2</panel_attributes>
+    <additional_attributes>590.0;10.0;10.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>168</y>
+      <w>384</w>
+      <h>720</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+W
+layer=2</panel_attributes>
+    <additional_attributes>10.0;880.0;460.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>600</y>
+      <w>480</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R Push TS
+layer=2</panel_attributes>
+    <additional_attributes>580.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>544</y>
+      <w>480</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R Push TS
+layer=2</panel_attributes>
+    <additional_attributes>580.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>600</y>
+      <w>480</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R Push TS
+layer=2</panel_attributes>
+    <additional_attributes>580.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>448</y>
+      <w>480</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R Push TS
+layer=2</panel_attributes>
+    <additional_attributes>580.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>472</y>
+      <w>480</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R Push TS
+layer=2</panel_attributes>
+    <additional_attributes>580.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>496</y>
+      <w>480</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R Push TS
+layer=2</panel_attributes>
+    <additional_attributes>580.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>520</y>
+      <w>472</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R Push TS
+layer=2</panel_attributes>
+    <additional_attributes>570.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>568</y>
+      <w>480</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R Push TS
+layer=2</panel_attributes>
+    <additional_attributes>580.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>600</y>
+      <w>376</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+W
+layer=2</panel_attributes>
+    <additional_attributes>10.0;300.0;450.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>600</y>
+      <w>376</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+W
+layer=2</panel_attributes>
+    <additional_attributes>10.0;480.0;450.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1080</x>
+      <y>1032</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>ipc_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>1024</y>
+      <w>376</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+W
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;450.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1080</x>
+      <y>808</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>mff_degradation_cmd_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>808</y>
+      <w>376</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>450.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>808</y>
+      <w>376</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>450.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1080</x>
+      <y>880</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>monitor_tower_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>840</y>
+      <w>376</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>450.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>872</y>
+      <w>376</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>450.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>864</y>
+      <w>376</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>450.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>880</y>
+      <w>376</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+W
+layer=2</panel_attributes>
+    <additional_attributes>10.0;70.0;450.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>880</y>
+      <w>376</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+W
+layer=2</panel_attributes>
+    <additional_attributes>10.0;50.0;450.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>1080</x>
+      <y>1080</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>node_status_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>1024</y>
+      <w>376</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>450.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>1000</y>
+      <w>376</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>450.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>616</y>
+      <w>480</w>
+      <h>488</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>580.0;590.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>664</y>
+      <w>480</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>580.0;530.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>688</y>
+      <w>480</w>
+      <h>416</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>580.0;500.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>888</y>
+      <w>368</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+W
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;440.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1072</x>
+      <y>48</y>
+      <w>216</w>
+      <h>1088</h>
+    </coordinates>
+    <panel_attributes>Analyzers
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>96</x>
+      <y>536</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>registry_clean_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>96</x>
+      <y>904</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>safety_report_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>56</y>
+      <w>168</w>
+      <h>504</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;610.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>80</y>
+      <w>168</w>
+      <h>480</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;580.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>104</y>
+      <w>168</w>
+      <h>456</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;550.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>136</y>
+      <w>168</w>
+      <h>424</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;510.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>160</y>
+      <w>168</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;480.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>184</y>
+      <w>168</w>
+      <h>376</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;450.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>200</y>
+      <w>168</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;430.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>232</y>
+      <w>168</w>
+      <h>328</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;390.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>248</y>
+      <w>168</w>
+      <h>312</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;370.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>272</y>
+      <w>168</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;340.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>296</y>
+      <w>168</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;310.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>328</y>
+      <w>168</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;270.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>344</y>
+      <w>168</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;250.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>368</y>
+      <w>168</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;220.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>392</y>
+      <w>168</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;190.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>416</y>
+      <w>168</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;160.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>448</y>
+      <w>168</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;120.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>464</y>
+      <w>168</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;100.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>488</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;70.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>520</y>
+      <w>168</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;30.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>528</y>
+      <w>168</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;380.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>344</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>368</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;440.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>392</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;470.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>424</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;510.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;530.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>472</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;570.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>488</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;590.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>536</y>
+      <w>168</w>
+      <h>512</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Clear
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;620.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>896</y>
+      <w>168</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>96</x>
+      <y>952</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>shm_to_md_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>704</y>
+      <w>168</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>10.0;330.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>952</y>
+      <w>168</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+W
+layer=2</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>96</x>
+      <y>928</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>system_status_report_analyzer
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>928</y>
+      <w>168</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+R
+layer=2</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+</diagram>

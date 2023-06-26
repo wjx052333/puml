@@ -1,0 +1,14 @@
+@startuml
+
+state STATE_MPILOT
+state STATE_MANUALDRIVE
+state STATE_PARKING
+
+state STATE_APA_SEARCHINGIN
+STATE_MANUALDRIVE --> STATE_APA_SEARCHINGIN : EVT_RequestAPASearchingIn
+note on link 
+prio=>1
+cond=>CM(IsApaSearchingInCanBeActivated)()
+action=>StateFunctioning::ActionEnterApaSearchingIn
+end note
+@enduml

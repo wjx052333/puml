@@ -1,0 +1,56 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>140</x><y>320</y><w>210</w><h>70</h></coordinates><panel_attributes>_object: Class_
+--
+id: Long="36548"
+[waiting for message]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>340</x><y>490</y><w>140</w><h>170</h></coordinates><panel_attributes>Note..
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>50</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>240</y><w>640</w><h>440</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;420;300;10;620;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>10</y><w>170</w><h>210</h></coordinates><panel_attributes>//Controll over the text of the whole element..
+_umletcode=
+var className = "Book"; 
+var members = ["-title: String", "-authors: String[]", "+getTitle(): String", "+getAuthors(): String[]", "+addAuthor(name)"];
+
+var publicAttributesDrawConfig = {fg: '#006400'}
+var privateAttributesDrawConfig = {fg: '#8b0000'}
+
+drawText(className, width/2, 40, center);
+drawLine(0, 50, width, 50);
+var membersHeight=75;
+for (var i=0;i&lt;members.length;i++) {
+   if(members[i][0]=='+'){	
+		drawText(members[i], width/2, membersHeight, center, publicAttributesDrawConfig );
+   } else if(members[i][0]=='-') {
+   	drawText(members[i], width/2, membersHeight, center, privateAttributesDrawConfig);
+   }
+	membersHeight+=30;
+}
+
+// draw book
+drawArc(10,10,20,10,0,180,true)  //Parameters (x, y, width, height, start, extent, open, drawConfig?)
+drawArc(30,10,20,10,0,180,true)  //Parameters (x, y, width, height, start, extent, open, drawConfig?)
+drawLine(30, 13, 30, 40)
+drawArc(30,37,20,10,0,180,false, {bg: 'black'})  //Parameters (x, y, width, height, start, extent, open, drawConfig?)
+drawArc(10,37,20,10,0,180,false, {bg: 'black'})  //Parameters (x, y, width, height, start, extent, open, drawConfig?)
+drawLine(10, 13, 10, 40)
+drawLine(50, 13, 50, 40)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>630</x><y>380</y><w>180</w><h>110</h></coordinates><panel_attributes>complex
+state
+--
+some more...
+
+-.
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>600</x><y>540</y><w>120</w><h>60</h></coordinates><panel_attributes>state with
+substates
+symbol=substate</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>610</x><y>660</y><w>120</w><h>60</h></coordinates><panel_attributes>state with
+substates
+symbol=substate</panel_attributes><additional_attributes></additional_attributes></element></diagram>

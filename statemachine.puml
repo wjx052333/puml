@@ -1,0 +1,84 @@
+```plantuml
+@startuml
+hide empty description
+title LPNP State Machine
+
+state StateFunctioning {
+    [*] --> StateManualDrive
+    StateManualDrive --> StateParking
+    StateParking --> StateManualDrive
+
+    state StateParking {
+        [*] --> StateRegionAPA
+
+        state StateRegionAPA {
+            [*] --> StateAPAStandby
+            StateAPAStandby --> StateAPASearchingIn
+            StateAPAStandby --> StateAPASearchingOut
+            StateAPASearchingIn --> StateAPAStandby
+            StateAPASearchingIn --> StateAPAPreActive
+            StateAPAPreActive --> StateAPAParkingIn
+            StateAPAPreActive --> StateAPASearchingIn
+            StateAPASearchingOut --> StateAPAStandby
+            StateAPASearchingOut --> StateAPAPreActive
+            StateAPAPreActive --> StateAPAParkingOut
+            StateAPAPreActive --> StateAPASearchingOut
+            StateAPAParkingIn --> StateAPAStandby
+            StateAPAParkingIn --> StateAPAParkingPaused
+            StateAPAParkingIn --> StateAPAParkingStopping
+            StateAPAParkingOut --> StateAPAStandby
+            StateAPAParkingOut --> StateAPAParkingPaused
+            StateAPAParkingOut --> StateAPAParkingStopping
+            StateAPAParkingPaused --> StateAPAParkingIn
+            StateAPAParkingPaused --> StateAPAParkingOut
+            StateAPAParkingPaused --> StateAPAStandby
+            StateAPAParkingPaused --> StateAPAParkingStopping
+            StateAPAParkingStopping --> StateAPAStandby
+        }
+
+        [*] --> StateRegionLPNP
+        state StateRegionLPNP {
+            [*] --> StateMlpnpStandby
+
+            state StateMlpnpStandby {
+                [*] --> StateLPNPPassive
+                StateLPNPPassive --> StateLPNPStandby
+                StateLPNPStandby --> StateLPNPPassive
+            }
+
+            state StateMapping {
+                StateMappingPreActive --> StateMappingActive
+            }
+
+            state StateCruising {
+                state StateCruisingActive {
+                    StateCruisingIn --> StateCruisingPaused
+                    StateCruisingPaused --> StateCruisingIn
+                    ' StateCruisingOut --> StateCruisingPaused
+                    ' StateCruisingPaused --> StateCruisingOut
+                }
+                StateCruisingPreActive --> StateCruisingIn
+                ' StateCruisingPreActive --> StateCruisingOut
+                StateCruisingIn --> StateCruisingComplete
+                StateCruisingActive --> StateCruisingStopping
+                StateCruisingActive --> StateCruisingMRM
+                StateCruisingComplete --> StateCruisingStopping
+            }
+
+            '跨节点
+            StateLPNPStandby --> StateMappingPreActive
+            StateMappingPreActive --> StateLPNPStandby
+            StateMappingActive --> StateLPNPStandby
+            StateLPNPStandby --> StateCruisingPreActive
+            StateCruisingPreActive --> StateLPNPStandby
+            StateCruisingActive --> StateLPNPStandby
+            StateCruisingComplete --> StateLPNPStandby
+            StateCruisingStopping --> StateLPNPStandby
+            ' StateCruisingIn --> StateLPNPStandby
+            ' StateCruisingOut --> StateLPNPStandby
+            ' StateCruisingPaused --> StateLPNPStandby
+            StateCruisingMRM --> StateLPNPStandby
+        }
+    }
+}
+@enduml

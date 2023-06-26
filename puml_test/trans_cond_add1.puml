@@ -1,0 +1,18 @@
+@startuml
+
+state STATE_MPILOT
+state STATE_MANUALDRIVE
+state STATE_PARKING
+
+state STATE_APA_SEARCHINGIN
+state STATE_MPILOT
+STATE_MANUALDRIVE --> STATE_MPILOT : CON_ManualDriveToMpilot
+note on link 
+prio=>1
+cond=>
+    CM_ENABLE(IsMPilotSwitchedOn, cm)() &&
+    CM_ENABLE(IsPlanningSwitchStartup, cm)() &&
+    CM_ENABLE(IsPilotNoFault, cm)()
+action=>StateFunctioning::ActionManualToPilot
+end note
+@enduml

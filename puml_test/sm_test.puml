@@ -1,0 +1,55 @@
+@startuml
+allowmixing
+
+state STATE_CRUISING_OUT 
+state STATE_CRUISING_PAUSED
+STATE_CRUISING_OUT --> STATE_CRUISING_PAUSED
+note on link 
+  this is a state-transition note 
+end note
+
+class Class
+object Object
+json JSON {
+   "fruit":"Apple",
+   "size":"Large",
+   "color": ["Red", "Green"]
+}
+
+object Foo
+map Bar {
+  abc=>
+  def=>
+}
+object Baz
+
+Bar::abc --> Baz : Label one
+Foo --> Bar::def : Label two
+
+state STATE_CRUISING_IN
+state STATE_CRUISING_PARKING_NEARBY
+
+package StateFunctioning {
+    map EVT_RequestParkingNearby {
+        src=>pCruisingIn
+        tgt=>pCruisingParkingNearby
+        prio=>1
+        cond=>true
+        action=>StateCruisingActive::ActCruisingToCruisingParkingNearby
+    }
+}
+map StateFunctioning_EVT_RequestParkingNearby {
+    src=>pCruisingIn
+    tgt=>pCruisingParkingNearby
+    prio=>1
+    cond=>true
+    action=>StateCruisingActive::ActCruisingToCruisingParkingNearby
+}
+
+STATE_CRUISING_IN --> StateFunctioning.EVT_RequestParkingNearby::src : test1
+StateFunctioning.EVT_RequestParkingNearby::tgt --> STATE_CRUISING_PARKING_NEARBY
+note on link 
+  this is a state-transition note 
+end note
+
+@enduml
